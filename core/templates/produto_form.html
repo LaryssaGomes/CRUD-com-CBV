@@ -1,0 +1,16 @@
+{% extends 'base.html' %} 
+{% load bootstrap4 %}
+
+{% block content %}
+    <h1>Produto</h1>
+    <form method="post">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+            {% buttons %}
+                <button type="submit" class="btn btn-warning">
+                    <a href="{% url 'index'%}">Cancelar</a>
+                </button>
+                <button type="submit" class="btn btn-primary">Salva</button>
+            {% endbuttons %}
+    </form>
+{% endblock %}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load bootstrap4 %}
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    {% bootstrap_css %}
+    <title>CRUD CBV</title>
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD CBV</h1>
+        {% block content %}{% endblock %}
+    </div>
+{% bootstrap_javascript jquery='full'%}
+</body>
+</html>
